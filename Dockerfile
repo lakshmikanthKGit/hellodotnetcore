@@ -7,7 +7,6 @@ WORKDIR /src
 COPY ["hellodontnetcore.csproj", "./"]
 RUN dotnet restore "hellodontnetcore.csproj"
 COPY . .
-WORKDIR "/src/."
 RUN dotnet build "hellodontnetcore.csproj" -c Release -o /app/build
 
 FROM build AS publish
