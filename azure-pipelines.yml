@@ -12,7 +12,7 @@ variables:
   imageRepository: 'hellodotnetocre'
   containerRegistry: 'lakshmiacr.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
-  tag: '$(Build.BuilNumber)'
+  tag: '$(Build.BuildNumber)'
   
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
